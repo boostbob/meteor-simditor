@@ -14,15 +14,19 @@ Package.onUse(function(api) {
   api.versionsFrom('1.10.2');
   api.use('ecmascript');
 
-  api.use('iyyang:cfs-aliyun@0.1.2');
+  api.use('webapp');
+  api.use('cfs:standard-packages');
+  api.use('cfs:ejson-file');
+  api.use('iyyang:cfs-aliyun');
 
   api.addFiles('server/images.js', ['server']);
   api.addFiles('server/uploader.js', ['server']);
 
   api.addFiles('client/simditor.css', ['client']);
   api.addFiles('client/simditor.js', ['client']);
-  api.addFiles('client/images.js', ['client']);
   api.addFiles('client/editor.js', ['client']);
+
+  api.mainModule('meteor-simditor.js');
 });
 
 Npm.depends({
@@ -32,6 +36,10 @@ Npm.depends({
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
+  api.use('random');
+  api.use('meteortesting:mocha');
 
-  api.addFiles('test/simditor-tests.js');
+  api.use('boostbob:meteor-simditor');
+
+  api.mainModule('test/simditor-tests.js');
 });

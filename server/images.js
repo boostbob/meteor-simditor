@@ -1,5 +1,5 @@
 let images = new FS.Store.OSS('images', {
-  region: Meteor.settings.region || 'region',
+  region: Meteor.settings.region || 'oss-cn-hangzhou',
   aliyunInternal: false,
   bucket: Meteor.settings.bucket || 'bucket',
   accessKeyId: Meteor.settings.accessKeyId || 'accessKeyId',

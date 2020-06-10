@@ -4,6 +4,10 @@ The [simditor](https://simditor.tower.im) wrapper for meteor package.
 
 - include aliyun oss uploader
 
+# dependencies
+
+- [iyyang:cfs-aliyun](https://atmospherejs.com/iyyang/cfs-aliyun)
+
 # setup
 
 the editor will load oss-config from [meteor settings](https://docs.meteor.com/api/core.html#Meteor-settings):
