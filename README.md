@@ -19,7 +19,9 @@ the editor will load oss-config from [meteor settings](https://docs.meteor.com/a
 - accessKeyId
 - secretAccessKey
 
+```shell
 meteor add boostbob:meteor-simditor
+```
 
 ```js
 // create
