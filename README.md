@@ -6,6 +6,8 @@ The [simditor](https://simditor.tower.im) wrapper for meteor package.
 
 # dependencies
 
+- [cfs:standard-packages](https://atmospherejs.com/cfs/standard-packages)
+- [cfs:ejson-file](https://atmospherejs.com/cfs/ejson-file)
 - [iyyang:cfs-aliyun](https://atmospherejs.com/iyyang/cfs-aliyun)
 
 # setup
