@@ -3,9 +3,7 @@ let images = new FS.Store.OSS('images', {
   aliyunInternal: false,
   bucket: Meteor.settings.bucket || 'bucket',
   accessKeyId: Meteor.settings.accessKeyId || 'accessKeyId',
-  secretAccessKey: Meteor.settings.secretAccessKey || 'secretAccessKey',
-  // transformWrite: function(fileObj, readStream, writeStream) {
-  // }
+  secretAccessKey: Meteor.settings.secretAccessKey || 'secretAccessKey'
 });
 
 Images = new FS.Collection('images', {
@@ -13,8 +11,8 @@ Images = new FS.Collection('images', {
   filter: {
     allow: {
       maxSize: 1 * 1024 * 1024,
-      // contentTypes: ['image/*'],
-      // extensions: ['png', 'PNG', 'jpg', 'JPG', 'jpeg', 'JPEG']
+      contentTypes: ['image/*'],
+      extensions: ['png', 'PNG', 'jpg', 'JPG', 'jpeg', 'JPEG']
     }
   }
 });
