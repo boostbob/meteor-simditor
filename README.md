@@ -1,12 +1,10 @@
-#boostbob:meteor-simditor
-
 The [simditor](https://simditor.tower.im) wrapper for meteor package.
 
-#addtional feature
+# addtional feature
 
 - include aliyun oss uploader
 
-#setup
+# setup
 
 the editor will load oss-config from [meteor settings](https://docs.meteor.com/api/core.html#Meteor-settings):
 
@@ -40,6 +38,6 @@ instance.editor1.setValue('');
 instance.editor2.setValue('');
 ```
 
-#license
+# license
 
 MIT
