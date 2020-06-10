@@ -15,9 +15,9 @@ Package.onUse(function(api) {
   api.use('ecmascript');
 
   api.use('webapp');
-  api.use('cfs:standard-packages');
-  api.use('cfs:ejson-file');
-  api.use('iyyang:cfs-aliyun');
+  api.use('cfs:standard-packages@0.5.10');
+  api.use('cfs:ejson-file@0.1.4');
+  api.use('iyyang:cfs-aliyun@0.1.2');
 
   api.addFiles('server/images.js', ['server']);
   api.addFiles('server/uploader.js', ['server']);
